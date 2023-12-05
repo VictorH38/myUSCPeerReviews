@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Review Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&family=Public+Sans:wght@100;600;700&display=swap" rel="stylesheet">
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+        }
+        .full-width-block {
+            width: 100%;
+            height: 80px;
+            background-color: #990001;
+            position: relative;
+        }
+        .full-width-block2 {
+            width: 100%;
+            height: 125px;
+            background-color: white;
+            position: relative;
+            display: flex;
+        }
+        .title1 {
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 700;
+            color: #FFC700;
+            font-size: 60px;
+            position: absolute;
+            top: 0px;
+            left: 20px;
+        }
+        .title2 {
+            font-family: 'Public Sans', sans-serif;
+            font-weight: 100;
+            color: black;
+            font-size: 50px;
+            position: absolute;
+            top: 18px;
+            left: 115px;
+        }
+        .hello {
+            font-family: 'Public Sans';
+            color: black;
+            font-size: 25px;
+            position: absolute;
+            top: 35px;
+        }
+        .full-width-block3 {
+            width: 100%;
+            height: 1000px;
+            background-color: #F4F4F4;
+            position: relative;
+            text-align: left;
+            top: -30px;
+        }
+        .logo {
+            height: 90px;
+            position: absolute;
+            top: -6px;
+            right: 0px;
+        }
+        .profile {
+            height: 50px;
+            position: absolute;
+            top: 25px;
+            right: 125px;
+        }
+        .button {
+            font-family: Public Sans;
+            font-weight: 700;
+            height: 100px;
+            width: 400px;
+            font-size: 25px;
+            border: white;
+            background-color: white;
+            color: #6D6D6D;
+            border-radius: 10px;
+            position: absolute;
+            top: 175px;
+        }
+        .submit {
+            font-family: Public Sans;
+            font-weight: 600;
+            border: #EC0D0F;
+            background-color: #EC0D0F;
+            color: white;
+            border-radius: 10px;
+            position: absolute;
+            height: 50px;
+            width: 300px;
+            font-size: 15px;
+            left: 575px;
+            top: 375px;
+        }
+    </style>
+</head>
+<body>
+    <div class="full-width-block">
+        <img class="logo" src="https://viterbigradadmission.usc.edu/wp-content/uploads/2023/02/PrimShield_Word_RegUse_Gold-Wh_RGB.png" alt="Logo">
+    </div>
+    <div class="full-width-block2">
+        <h3>
+			<a href="dashboard.html">
+				<span class="title1">my</span>
+            	<span class="title2">USCPeerReviews</span>
+			</a>
+        </h3>
+    </div>
+    <div class="full-width-block3">
+        <h1 style="font-family: Public Sans; font-weight: 600; font-size: 40px; position: absolute; top: 50px; left: 600px">Review Essay</h1>
+        <button id="download" onclick="downloadEssay()" class="button" style="left: 305px; cursor: pointer">DOWNLOAD ESSAY</button>
+        <h3 style="font-family: Public Sans; font-weight: 700; position: absolute; top: 125px; right: 650px; height: 75px;">Tags:</h3>
+        <div class="button" style="right: 300px">
+            <div id="tag-display" style="font-size:17px"></div>
+        </div>
+        <form id="feedback-submission"> 
+            <h3 style="font-family: Public Sans; font-weight: 700; position: absolute; top: 280px; left: 550px; height: 75px;">Upload Feedback:</h3>
+            <input type="file" name="feedback" style="position: absolute; top: 300px; right: 475px;">
+            <input class="submit" type="submit" value="SUBMIT FEEDBACK" style="cursor: pointer" onclick="submitFeedback()"/>
+        </form>
+    </div>
+    <script src="review_page.js"></script>
+</body>
+</html>

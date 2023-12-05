@@ -1,0 +1,291 @@
+<!-- Path: HTML_CSS/CSCI201_FinalProject_Frontend/HomePage.html -->
+<!DOCTYPE html>
+<html lang="end" dir="ltr">
+    <head>
+        <title>Home Page</title>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&family=Public+Sans:wght@100;600;700&display=swap" rel="stylesheet">
+        <meta charset="utf-8">
+    </head>
+    <style>
+        body,html {
+            margin: 0;
+            padding: 0;
+            background-color:#9f0000;
+        }
+        .full-width-block {
+            width: 100%;
+            height: 170px;
+            background-color: #9f0000;
+            position: relative;
+            overflow: clip;
+            margin-bottom: 20px;
+        }
+        .overlay {
+            display: block;
+            width: 40%;
+            height: 710px;
+            position: center;
+            background-color: #770000;
+            margin: auto;
+            border-radius: 15px;
+            padding-top: 2px;
+            padding-left: 5px;
+            padding-right: 5px;
+            overflow: clip;
+            margin-bottom: 40px;
+        }
+        #logo{
+            color: yellow;
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 700;
+            color: #FFC700;
+            font-size: 100px;
+            position: absolute;
+            top: -40px;
+            left: 20px;
+        }
+        #logohalf{
+            color: white;
+            font-family: 'Public Sans', sans-serif;
+            font-weight: 50;
+            font-size: 90px;
+            position: absolute;
+            top: -10px;
+            left: 175px;
+        }
+        #usclogo{
+            height: 200px;
+            width:auto;
+            position: relative;
+            margin-left: 920px;
+        }
+        #welcome{
+            color: white;
+            font-family: 'Public Sans', sans-serif;
+            font-size: 30px;
+            margin-left: 5px;
+            margin-top: 10px;
+        }
+        .login{
+            position: relative;
+            height: 43%;
+            text-align: center;
+        }
+        .login .username{
+            position: relative;
+            overflow: clip;
+        }
+        .login .password{
+            position: relative;
+            overflow: clip;
+        }
+        .submit{
+            height: 40px;;
+            width:100%;
+            display: inline-block;
+            top: -220px;
+        }
+        .login .username input[type=text], .login .password input[type=password] {
+            width: 80%;
+            height: 45px;
+            display: inline-block;
+            box-sizing: border-box;
+            border-radius: 5px;
+            margin: 0px 10%;
+            position: relative;
+            font-family: 'Public Sans', sans-serif;
+            font-weight: bold;
+            font-size: 20px;
+        }
+        .login .username img{
+            position: relative;
+            top: -37px;
+            left: 200px;
+        }
+        .login .password img{
+            position: relative;
+            top: -37px;
+            left: 200px;
+        }
+        #signin {
+            font-family: 'Public Sans', sans-serif;
+            font-size: 20px;
+            border-color: rgb(81, 0, 0);
+            background-color: rgb(81, 0, 0);
+            color: white;
+            margin-left: 60%;
+            box-sizing: border-box;
+            width: 20%;
+            height: 100%;
+            border-radius: 10px;
+            margin-top: -10px;
+            position: relative;
+    		top: -10px;
+        }
+        #signup {
+            font-family: 'Public Sans', sans-serif;
+            font-size: 20px;
+            border-color: rgb(81, 0, 0);
+            background-color: rgb(81, 0, 0);
+            color: white;
+            margin-left: 70%;
+            box-sizing: border-box;
+            width: 20%;
+            height: 100%;
+            border-radius: 10px;
+            margin-top: -10px;
+        }
+        .or{
+            position: relative;
+            top: -50px;
+            color: white;
+        }
+        .or h1{
+            font-family: 'Public Sans', sans-serif;
+            font-size: 23px;
+            margin-left: 47%;
+        }
+        .left-line{
+            display:block;
+            color: white;
+            background-color: white;
+            height: 5px;
+            width: 40%;
+            margin-left: 4%;
+            margin-top: -88px;
+            border-radius: 5px;
+        }
+        .right-line{
+            display:block;
+            color: white;
+            background-color: white;
+            height: 5px;
+            width: 40%;
+            margin-left: 56%;
+            margin-top: -5px;
+            border-radius: 5px;
+        }
+        .register{
+            display: block;
+            height: 40%;
+        }
+        .register .username{
+            position: relative;
+        }
+        .register .password{
+            position: relative;
+        }
+        .register input[type=text], .register input[type=password] {
+            width: 37%;
+            height: 35px;
+            display: inline-block;
+            box-sizing: border-box;
+            border-radius: 5px;
+            margin: 15px 15px;
+            left: 40px;
+            position: relative;
+            font-family: 'Public Sans', sans-serif;
+            font-weight: bold;
+            font-size: 15px;
+        }
+        .register #graduation{
+            box-sizing: border-box;
+            width: 80%;
+            margin-bottom: 33px;
+        }
+        .guest input{
+            font-family: 'Public Sans', sans-serif;
+            font-size: 20px;
+            border-color: rgb(81, 0, 0);
+            background-color: rgb(81, 0, 0);
+            color: white;
+            margin-left: 30%;
+            box-sizing: border-box;
+            width: 40%;
+            height: 100%;
+            border-radius: 10px;
+            margin-top: 5px;   
+            padding: 5px 0px;  
+            position: relative;
+    		top: -10px;  
+        }
+        strong{
+            font-weight: bold;
+            font-size:larger;
+        }
+        small{
+            font-size: smaller;
+            font-weight: italic, thin;
+        }
+        .error {
+			font-family: 'Public Sans', sans-serif;
+			text-align: center;
+		    font-size: 24px;
+		    color: gold;
+		}
+    </style>
+    <body>
+        <!-- section class ="overlay" id="login"-->
+        <div class="full-width-block">
+            <h1 id="logo">my</h1>
+            <h1 id="logohalf">USCPeerReviews</h1>
+            <img id="usclogo" src="https://viterbigradadmission.usc.edu/wp-content/uploads/2023/02/PrimShield_Word_RegUse_Gold-Wh_RGB.png" alt="myUSCPeerReviews">
+        </div>
+        <p class="error" id="loginerror"></p>
+        <p class="error" id="signuperror"></p>
+        <section class="overlay" id="login">
+        <div class="login">
+            <h3 id="welcome"><strong>Welcome</strong><br>
+            <small>Please sign in to continue</small></h3>
+            <form id="loginform" method="POST">
+                <div class ="username">
+                    <input type="text" required id="usernameL" name="username" placeholder="Username" minlength="5" maxlength="16">
+                    <img src="https://cdn3.iconfinder.com/data/icons/black-easy/512/538474-user_512x512.png" width=30>
+                </div>
+                <div class="password">
+                    <input type="password"required id="passwordL" name="password" placeholder="Password" minlength="5" maxlength="16">
+                    <img src="https://cdn1.iconfinder.com/data/icons/money-an-icon2/164/5-512.png" width=30>
+                </div>
+                <div class="submit">
+                    <input type="submit" id="signin" value="Sign in">
+                </div>
+            </form>
+        </div>
+        <section class="divider">
+            <div class="or">
+                <h1 id="or"><strong>OR</strong></h1>
+            </div>
+            <div class="left-line"></div>
+            <div class="right-line"></div>
+        </section>
+        <div class="register">
+            <form id="signupform" method="POST">
+                <input type="text" required id="fname" name="fname" placeholder="First Name">
+                <input type="text" required id="lname" name="lname" placeholder="Last Name">
+                <input type="text" required id="usernameS" name="username" placeholder="Username" minlength="5" maxlength="16">
+                <input type="password"required id="passwordS" name="password" placeholder="Password" minlength="5" maxlength="16">
+                <input type="text" required id="graduation" name="graduation" placeholder="Graduation Year (ex. '2025')">
+                <div class="submit">
+                    <input type="submit" id="signup" value="Sign up">
+                </div>
+            </form>
+        </div>
+        <section class="divider">
+            <div class="or">
+                <h1 id="or"><strong>OR</strong></h1>
+            </div>
+            <div class="left-line"></div>
+            <div class="right-line"></div>
+        </section>
+        <div class="guest">
+            <form id="guestcontinue" method="POST">
+                <input type="submit" id="guest" value="Continue as Guest">
+            </form>
+
+        </div>
+
+
+        </section>
+        <script src="homepage.js"></script>
+    </body>
+</html>

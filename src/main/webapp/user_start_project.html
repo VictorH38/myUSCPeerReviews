@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Start Project</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&family=Public+Sans:wght@100;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+        }
+        .full-width-block {
+            width: 100%;
+            height: 80px;
+            background-color: #990001;
+            position: relative;
+        }
+        .full-width-block2 {
+            width: 100%;
+            height: 125px;
+            background-color: white;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+        }
+        .title1 {
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 700;
+            color: #FFC700;
+            font-size: 60px;
+            position: absolute;
+            top: 0px;
+            left: 20px;
+        }
+        .title2 {
+            font-family: 'Public Sans', sans-serif;
+            font-weight: 100;
+            color: black;
+            font-size: 50px;
+            position: absolute;
+            top: 18px;
+            left: 115px;
+        }
+        .hello {
+            font-family: 'Public Sans';
+            color: black;
+            font-size: 25px;
+            position: absolute;
+            top: 35px;
+        }
+        .full-width-block3 {
+            width: 100%;
+            height: 1000px;
+            background-color: #F4F4F4;
+            position: relative;
+            text-align: left;
+            top: -30px;
+        }
+        .logo {
+            height: 90px;
+            position: absolute;
+            top: -6px;
+            right: 0px;
+        }
+        .profile {
+			font-family: Arial, sans-serif;
+            height: 50px;
+            position: absolute;
+            top: 25px;
+            right: 125px;
+        }
+        .button {
+            font-family: Public Sans;
+            font-weight: 700;
+            height: 100px;
+            width: 400px;
+            font-size: 25px;
+            border: white;
+            background-color: white;
+            color: #6D6D6D;
+            border-radius: 10px;
+            position: absolute;
+            top: 200px;
+        }
+        .submit {
+            font-family: Public Sans;
+            font-weight: 600;
+            border: #EC0D0F;
+            background-color: #EC0D0F;
+            color: white;
+            border-radius: 10px;
+            position: absolute;
+            height: 50px;
+            width: 300px;
+            font-size: 15px;
+            left: 575px;
+            top: 350px;
+        }
+        .form-fill-ins {
+            font-family: Public Sans;
+            font-weight: 400;
+            border: white;
+            background-color: white;
+            color: #6D6D6D;
+            border-radius: 10px;
+            height: 50px;
+            width: 400px;
+            font-size: 20px;
+            position: absolute;
+        }
+        .checkbox {
+            font-family: Public Sans;
+            font-weight: 400;
+            color: black;
+            background-color: white;
+            border: white;
+            border-radius: 10px;
+            font-size: 20px;
+            position: absolute;
+            height: 30px;
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+    <div class="full-width-block">
+        <img class="logo" src="https://viterbigradadmission.usc.edu/wp-content/uploads/2023/02/PrimShield_Word_RegUse_Gold-Wh_RGB.png" alt="Logo">
+    </div>
+    <div class="full-width-block2">
+        <h3>
+            <a href="dashboard.html">
+				<span class="title1">my</span>
+            	<span class="title2">USCPeerReviews</span>
+			</a>
+        </h3>
+    </div>
+    <div class="full-width-block3">
+        <h1 style="font-family: Public Sans; font-weight: 600; font-size: 40px; position: absolute; top: 50px; left: 500px">Start a Peer Review Project</h1>
+        <div id="start_proj">
+            <input id="essayname" class="form-fill-ins" type="text" name="course_name" placeholder="Essay Name" style="top: 200px; left: 315px"/><br />
+            <h3 style="font-family: Public Sans; font-weight: 700; position: absolute; top: 250px; left: 315px; height: 75px;">Upload Essay:</h3>
+            <input type="file" name="uploadessay" style="position: absolute; top: 300px; left: 315px;">
+            <div id="tags">
+	            <h3 style="font-family: Public Sans; font-weight: 700; position: absolute; top: 140px; right: 475px;">Select Tags that Apply:</h3>
+	            <label for="option1" class="checkbox" style="top: 200px; right: 475px">
+	                <input type="checkbox" id="tag1" name="tag1" value="Argumentative">
+	                Argumentative
+	            </label>
+	            <label for="option2" class="checkbox" style="top: 250px; right: 475px">
+	                <input type="checkbox" id="tag2" name="tag2" value="Narrative">
+	                Narrative
+	            </label>
+	            <label for="option3" class="checkbox" style="top: 300px; right: 475px">
+	                <input type="checkbox" id="tag3" name="tag3" value="Expository">
+	                Expository
+	            </label>
+	            <label for="option4" class="checkbox" style="top: 350px; right: 475px">
+	                <input type="checkbox" id="tag4" name="tag4" value="Critical Analysis">
+	                Critical Analysis
+	            </label>
+	            <label for="option5" class="checkbox" style="top: 200px; right: 250px">
+	                <input type="checkbox" id="tag5" name="tag5" value="Science/Tech">
+	                Science/Tech
+	            </label>
+	            <label for="option6" class="checkbox" style="top: 250px; right: 250px">
+	                <input type="checkbox" id="tag6" name="tag6" value="History/Politics">
+	                History/Politics
+	            </label>
+	            <label for="option7" class="checkbox" style="top: 300px; right: 250px">
+	                <input type="checkbox" id="tag7" name="tag7" value="Econ/Business">
+	                Econ/Business
+	            </label>
+	            <label for="option8" class="checkbox" style="top: 350px; right: 250px">
+	                <input type="checkbox" id="tag8" name="tag8" value="Arts/Culture">
+	                Arts/Culture
+	            </label>
+            </div>
+            <input class="submit" type="button" value="SUBMIT" style="right: 305px; background-color: #0742B0; top:425px; cursor: pointer" onclick="start_project()"/>
+        </form>
+    </div>
+    <script src="project.js"></script>
+</body>
+</html>

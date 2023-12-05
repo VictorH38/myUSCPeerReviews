@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Start Project</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&family=Public+Sans:wght@100;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+        }
+        .full-width-block {
+            width: 100%;
+            height: 80px;
+            background-color: #990001;
+            position: relative;
+        }
+        .full-width-block2 {
+            width: 100%;
+            height: 125px;
+            background-color: white;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+        }
+        .title1 {
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 700;
+            color: #FFC700;
+            font-size: 60px;
+            position: absolute;
+            top: 0px;
+            left: 20px;
+        }
+        .title2 {
+            font-family: 'Public Sans', sans-serif;
+            font-weight: 100;
+            color: black;
+            font-size: 50px;
+            position: absolute;
+            top: 18px;
+            left: 115px;
+        }
+        .hello {
+            font-family: 'Public Sans';
+            color: black;
+            font-size: 25px;
+            position: absolute;
+            top: 35px;
+        }
+        .full-width-block3 {
+            width: 100%;
+            height: 1000px;
+            background-color: #F4F4F4;
+            position: relative;
+            text-align: left;
+            top: -30px;
+        }
+        .logo {
+            height: 90px;
+            position: absolute;
+            top: -6px;
+            right: 0px;
+        }
+        .profile {
+            height: 50px;
+            position: absolute;
+            top: 25px;
+            right: 125px;
+        }
+        .button {
+            font-family: Public Sans;
+            font-weight: 700;
+            height: 100px;
+            width: 400px;
+            font-size: 25px;
+            border: white;
+            background-color: white;
+            color: #6D6D6D;
+            border-radius: 10px;
+            position: absolute;
+            top: 200px;
+        }
+        .submit {
+            font-family: Public Sans;
+            font-weight: 600;
+            border: #EC0D0F;
+            background-color: #EC0D0F;
+            color: white;
+            border-radius: 10px;
+            position: absolute;
+            height: 50px;
+            width: 300px;
+            font-size: 15px;
+        }
+        .form-fill-ins {
+            font-family: Public Sans;
+            font-weight: 400;
+            border: white;
+            background-color: white;
+            color: #6D6D6D;
+            border-radius: 10px;
+            height: 50px;
+            width: 400px;
+            font-size: 20px;
+            position: absolute;
+        }
+        .checkbox {
+            font-family: Public Sans;
+            font-weight: 400;
+            color: black;
+            background-color: white;
+            border: white;
+            border-radius: 10px;
+            font-size: 20px;
+            position: absolute;
+            height: 30px;
+            width: 200px;
+        }
+        #tag-message {
+			font-family: Public Sans;
+			text-align: center;
+		    font-size: 24px;
+		    color: dodgerblue;
+		    position: relative;
+    		top: 220px;
+		}
+    </style>
+</head>
+<body>
+    <div class="full-width-block">
+        <img class="logo" src="https://viterbigradadmission.usc.edu/wp-content/uploads/2023/02/PrimShield_Word_RegUse_Gold-Wh_RGB.png" alt="Logo">
+    </div>
+    <div class="full-width-block2">
+        <h3>
+            <a href="dashboard.html">
+				<span class="title1">my</span>
+            	<span class="title2">USCPeerReviews</span>
+			</a>
+            <img class="profile" src="https://www.doyonutilities.com/wp-content/uploads/profile-icon.png">
+            <span class="hello" style="font-weight: 100; right: 95px">hi,</span>
+            <spam class="hello" style="font-weight: 600; right: 20px"> <em>guest</em></spam>
+        </h3>
+    </div>
+    <div class="full-width-block3">
+        <h1 style="font-family: Public Sans; font-weight: 600; font-size: 40px; position: absolute; top: 50px; left: 500px">Start a Peer Review Project</h1>
+        <form id="start_proj">
+            <input id="essayname" class="form-fill-ins" type="text" name="course_name" placeholder="Essay Name" style="top: 175px; left: 550px"/><br />
+            <p id="tag-message">Register an account to add tags to your essay</p>
+            <h3 style="font-family: Public Sans; font-weight: 700; position: absolute; top: 320px; left: 600px; height: 75px;">Upload Essay:</h3>
+            <input type="file" name="uploadessay" style="position: absolute; top: 341px; right: 520px;">
+            <input class="submit" type="button" value="SUBMIT" style="right: 610px; background-color: #0742B0; top:420px; cursor: pointer;" onclick="start_project()"/>
+        </form>
+    </div>
+    <script src="project.js"></script>
+</body>
+</html>
